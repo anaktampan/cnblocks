@@ -2,12 +2,12 @@ import * as React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@tailark/core/lib/utils'
 
-const cardVariants = cva('text-card-foreground rounded-xl', {
+const cardVariants = cva('text-card-foreground rounded-2xl', {
     variants: {
         variant: {
-            default: 'bg-card border shadow border-transparent ring-1 ring-foreground/5',
-            soft: 'bg-foreground/5',
-            mixed: 'bg-foreground/5 border border-foreground.5',
+            default: 'bg-card ring-1 ring-foreground/6.5 shadow-lg shadow-foreground/5 dark:shadow-black/10',
+            soft: 'bg-muted',
+            mixed: 'bg-muted border',
         },
     },
     defaultVariants: {
