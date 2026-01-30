@@ -2,6 +2,7 @@ import BlockRenderer from './block-renderer'
 import { cn } from '@tailark/core/lib/utils'
 import { use } from 'react'
 import { Metadata } from 'next'
+import { DevToolbar } from '@/components/toolbar'
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {
     const { slug } = await params
@@ -52,6 +53,7 @@ export default function PreviewPage({ params }: { params: Promise<{ slug: string
                 category={category}
                 variant={variant}
             />
+            {process.env.NODE_ENV === 'development' && <DevToolbar />}
         </div>
     )
 }
