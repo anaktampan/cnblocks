@@ -17,7 +17,7 @@ export default function Features() {
     const [feature, setFeature] = useState<Feature>('seamless-integrations')
     return (
         <section className="bg-background @container py-24">
-            <div className="mx-auto grid max-w-3xl grid-cols-2 gap-6 px-6">
+            <div className="@2xl:grid-cols-2 mx-auto grid max-w-3xl gap-6 px-6">
                 <div>
                     <div>
                         <h2 className="text-balance font-serif text-4xl font-medium">Powerful Features for Modern Teams</h2>
@@ -63,7 +63,7 @@ export default function Features() {
                         </button>
                     </div>
                 </div>
-                <div className="bg-linear-to-b via-muted flex items-center overflow-hidden rounded-3xl *:w-full">
+                <div className="@max-xl:-mx-6 bg-linear-to-b via-muted flex items-center overflow-hidden rounded-3xl *:w-full">
                     {feature === 'seamless-integrations' && <IntegrationsIllustration />}
                     {feature === 'real-time-sync' && <RealTimeIllustration />}
                     {feature === 'developer-first' && <DeveloperIllustration />}
