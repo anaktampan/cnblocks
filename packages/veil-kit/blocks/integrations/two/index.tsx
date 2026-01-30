@@ -43,7 +43,7 @@ const IntegrationsIllustration = () => {
                 <LogoIcon className="size-5" />
             </div>
             <div className="rotate-120 *:-rotate-120 absolute inset-0 flex items-center justify-between gap-12">
-                <div className="absolute inset-4 rounded-full border border-dashed" />
+                <div className="border-foreground/10 absolute inset-4 rounded-full border border-dashed" />
 
                 <div className="bg-muted relative flex size-9 items-center rounded-full border backdrop-blur *:m-auto">
                     <Firebase className="size-3.5" />
@@ -53,7 +53,7 @@ const IntegrationsIllustration = () => {
                 </div>
             </div>
             <div className="absolute inset-12 flex items-center justify-between gap-12">
-                <div className="absolute inset-4 rounded-full border border-dashed" />
+                <div className="border-foreground/10 absolute inset-4 rounded-full border border-dashed" />
 
                 <div className="bg-muted relative flex size-9 items-center rounded-full border backdrop-blur *:m-auto">
                     <Vercel className="size-3.5" />
@@ -63,7 +63,7 @@ const IntegrationsIllustration = () => {
                 </div>
             </div>
             <div className="absolute inset-24 flex rotate-45 items-center justify-between gap-12 *:-rotate-45">
-                <div className="absolute inset-4 rounded-full border border-dashed" />
+                <div className="border-foreground/10 absolute inset-4 rounded-full border border-dashed" />
 
                 <div className="bg-card shadow-black/6.5 ring-border relative flex size-9 items-center rounded-full shadow-sm ring *:m-auto">
                     <Clerk className="size-3.5" />
