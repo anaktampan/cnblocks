@@ -68,4 +68,23 @@ export const veilKitBlockMap = {
         four: () => import('./faqs/four').then((mod) => mod.default),
         five: () => import('./faqs/five').then((mod) => mod.default),
     },
+    login: {
+        one: () => import('./login/one').then((mod) => mod.default),
+        two: () => import('./login/two').then((mod) => mod.default),
+        three: () => import('./login/three').then((mod) => mod.default),
+    },
+    'sign-up': {
+        one: () => import('./sign-up/one').then((mod) => mod.default),
+        two: () => import('./sign-up/two').then((mod) => mod.default),
+        three: () => import('./sign-up/three').then((mod) => mod.default),
+    },
+    'forgot-password': {
+        one: () => import('./forgot-password/one').then((mod) => mod.default),
+        two: () => import('./forgot-password/two').then((mod) => mod.default),
+        three: () => import('./forgot-password/three').then((mod) => mod.default),
+    },
+    contact: {
+        one: () => import('./contact/one').then((mod) => mod.default),
+        two: () => import('./contact/two').then((mod) => mod.default),
+    },
 }

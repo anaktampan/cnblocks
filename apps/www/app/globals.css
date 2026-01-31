@@ -218,7 +218,7 @@
   --accent-foreground: #3f392c;
   --destructive: var(--color-red-600);
   --border: --alpha(var(--foreground)/6.5%);
-  --input: --alpha(var(--foreground)/6.5%);
+  --input: --alpha(var(--foreground)/20%);
   --ring: var(--primary);
 
   @variant dark {
@@ -238,6 +238,8 @@
     --accent: var(--color-zinc-700);
     --accent-foreground: var(--color-white);
     --destructive: var(--color-red-600);
+
+    --input: --alpha(var(--foreground)/15%);
   }
 
   @apply *:text-foreground selection:text-primary selection:bg-muted
