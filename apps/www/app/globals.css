@@ -234,6 +234,7 @@
     --primary-foreground: var(--color-white);
     --secondary: --alpha(var(--primary)/10%);
     --secondary-foreground: #e6ddd6;
+    --muted: var(--background);
     --muted-foreground: #a8a6a4;
     --accent: var(--color-zinc-700);
     --accent-foreground: var(--color-white);
