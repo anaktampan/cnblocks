@@ -230,7 +230,6 @@
     --card-foreground: #e6ddd6;
     --popover: var(--color-white);
     --popover-foreground: var(--color-zinc-950);
-    --primary: #98785d;
     --primary-foreground: var(--color-white);
     --secondary: --alpha(var(--primary)/10%);
     --secondary-foreground: #e6ddd6;

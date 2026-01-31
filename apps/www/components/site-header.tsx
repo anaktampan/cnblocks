@@ -61,9 +61,20 @@ export const SiteHeader = () => {
                                 variant="ghost"
                                 className={cn('text-foreground/75 rounded-full', isActive('/mist') && 'text-foreground')}>
                                 <Link
-                                    href="/mist/hero-section"
+                                    href="/mist"
                                     className="!text-sm">
                                     Mist
+                                </Link>
+                            </Button>
+                            <Button
+                                asChild
+                                size="sm"
+                                variant="ghost"
+                                className={cn('text-foreground/75 rounded-full', isActive('/veil') && 'text-foreground')}>
+                                <Link
+                                    href="/veil"
+                                    className="!text-sm">
+                                    Veil
                                 </Link>
                             </Button>
 
