@@ -158,7 +158,7 @@ export const blockHeights: Record<string, number> = {
   'veil/testimonials/four': 370,
   'veil/call-to-action/one': 352,
   'veil/call-to-action/two': 500,
-  'veil/call-to-action/three': 332,
+  'veil/call-to-action/three': 334,
   'veil/call-to-action/four': 540,
   'veil/pricing/one': 1234,
   'veil/pricing/two': 812,

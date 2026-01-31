@@ -32,9 +32,6 @@ function getKitAndCategory(slug: string[]): { kitShortName: string; category: st
     return { kitShortName, category, kitFullName }
 }
 
-export const dynamic = 'force-static'
-export const revalidate = 3600
-
 export async function generateStaticParams() {
     const uniquePaths = new Set<string>()
     blocks.forEach((block) => {

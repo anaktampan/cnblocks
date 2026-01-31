@@ -217,7 +217,7 @@
   --accent: #e3e0d8;
   --accent-foreground: #3f392c;
   --destructive: var(--color-red-600);
-  --border: --alpha(var(--foreground)/6.5%);
+  --border: --alpha(var(--foreground)/7.5%);
   --input: --alpha(var(--foreground)/20%);
   --ring: var(--primary);
 

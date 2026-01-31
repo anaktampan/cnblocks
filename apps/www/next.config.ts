@@ -2,6 +2,7 @@
 
 const nextConfig = {
     productionBrowserSourceMaps: true,
+    cacheComponents: true,
     images: {
         remotePatterns: [
             {

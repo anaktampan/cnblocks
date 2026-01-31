@@ -122,18 +122,12 @@ const BlockPreviewToolbar: React.FC<BlockPreviewToolbarProps> = ({ mode, onModeC
                                     defaultValue={prompt}
                                     value={prompt}
                                     onValueChange={(value: Prompt) => setPrompt(value)}>
-                                    <TooltipProvider>
-                                        <Tooltip delayDuration={0}>
-                                            <TooltipTrigger asChild>
-                                                <SelectTrigger
-                                                    aria-label="Select a package manager"
-                                                    className="border-(--from-color) hover:bg-muted h-8 w-9 rounded-md rounded-r-none border-y border-l border-r-0 px-0 shadow-none *:mx-auto *:data-[slot=select-icon]:hidden">
-                                                    <SelectValue placeholder="Select a package manager" />
-                                                </SelectTrigger>
-                                            </TooltipTrigger>
-                                            <TooltipContent>Change package manager</TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
+                                    <SelectTrigger
+                                        aria-label="Select a package manager"
+                                        className="hover:bg-muted h-8 gap-2 rounded-md border-none pr-1 shadow-none *:mx-auto">
+                                        <SelectValue placeholder="Select a package manager" />
+                                    </SelectTrigger>
+
                                     <SelectContent
                                         position="item-aligned"
                                         align="center"
@@ -170,7 +164,7 @@ const BlockPreviewToolbar: React.FC<BlockPreviewToolbarProps> = ({ mode, onModeC
                                 size="sm"
                                 aria-label="Copy CLI"
                                 data-slot="btn"
-                                className={cn('hover:bg-linear-to-l hover:from-muted peer-hover:bg-linear-to-r border-(--from-color) peer-hover:from-muted relative rounded-l-none border-y border-r pl-0.5 transition-none hover:bg-transparent hover:from-85%')}>
+                                className={cn('hover:bg-linear-to-l hover:from-muted relative transition-none')}>
                                 <AnimatePresence mode="popLayout">
                                     {cliCopied && (
                                         <motion.span
@@ -179,7 +173,7 @@ const BlockPreviewToolbar: React.FC<BlockPreviewToolbarProps> = ({ mode, onModeC
                                             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                                             exit={{ opacity: 0, y: 16, filter: 'blur(6px)' }}
                                             transition={{ duration: 0.3 }}
-                                            className="absolute inset-0 my-auto size-fit text-emerald-600 dark:text-emerald-400">
+                                            className="absolute inset-0 my-auto size-fit px-2 text-emerald-600 dark:text-emerald-400">
                                             Copied!
                                         </motion.span>
                                     )}
