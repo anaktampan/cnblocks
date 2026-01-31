@@ -61,4 +61,11 @@ export const veilKitBlockMap = {
         two: () => import('./comparator/two').then((mod) => mod.default),
         three: () => import('./comparator/three').then((mod) => mod.default),
     },
+    faqs: {
+        one: () => import('./faqs/one').then((mod) => mod.default),
+        two: () => import('./faqs/two').then((mod) => mod.default),
+        three: () => import('./faqs/three').then((mod) => mod.default),
+        four: () => import('./faqs/four').then((mod) => mod.default),
+        five: () => import('./faqs/five').then((mod) => mod.default),
+    },
 }

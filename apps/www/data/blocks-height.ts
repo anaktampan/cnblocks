@@ -170,4 +170,9 @@ export const blockHeights: Record<string, number> = {
   'veil/comparator/one': 898,
   'veil/comparator/two': 893,
   'veil/comparator/three': 1307,
+  'veil/faqs/one': 640,
+  'veil/faqs/two': 456,
+  'veil/faqs/three': 636,
+  'veil/faqs/four': 746,
+  'veil/faqs/five': 903,
 }
