@@ -8,7 +8,7 @@ import { ThemeToggle } from '@/components/theme-toggle'
 import { KitSwitcher } from '@/components/kit-switcher'
 import { cn } from '@/lib/utils'
 import { Separator } from '@tailark/core/ui/separator'
-import { GiftIcon, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { Dialog, DialogClose, DialogTitle, DialogContent, DialogTrigger } from '@tailark/core/ui/dialog'
 import { BorderBeam } from '@tailark/core/magicui/border-beam'
 
@@ -24,12 +24,16 @@ export const SiteHeader = () => {
         <header>
             <div className="mx-auto max-w-7xl px-6 lg:px-4">
                 <div className="flex items-center justify-between py-3 lg:py-4">
-                    <Link
-                        href="/"
-                        className="flex w-fit items-center gap-2">
-                        <Logo />
-                        <span className="sr-only">Tailark</span>
-                    </Link>
+                    <div className="flex items-center gap-4">
+                        <Link
+                            href="/"
+                            className="flex w-fit items-center gap-2">
+                            <Logo />
+                            <span className="sr-only">Tailark</span>
+                        </Link>
+
+                        <BlackFridayDealBanner />
+                    </div>
 
                     <div className="-mr-2 hidden items-center gap-4 sm:flex">
                         <div className="flex items-center gap-1">
@@ -311,14 +315,11 @@ export const SiteHeader = () => {
 export const BlackFridayDealBanner = () => (
     <div className="dark:text-foreground hover:bg-foreground/5 dark:hover:bg-emerald-500/7 dark:bg-emerald-500/3 dark:bg-linear-to-l dark:from-foreground/5 relative inline-flex h-7 items-center gap-1 rounded-full bg-emerald-500/10 text-sm text-emerald-950 before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:border before:border-emerald-500/25">
         <Link
-            href="https://pro.tailark.com/#pricing"
-            aria-label="Tailark Pro sale"
+            href="/veil"
+            aria-label="Introducing Veil Kit"
             className="flex items-center gap-1 px-2.5 py-1">
-            <GiftIcon className="size-4 *:last:text-emerald-500" />
-            <span className="dark:text-foreground hidden text-emerald-950 sm:inline">Black Friday: </span>
-            <span className="dark:text-foreground/85">
-                Get <span className="dark:text-foreground font-semibold">50% OFF</span> <span className="hidden sm:inline">Tailark Pro</span>
-            </span>
+            <span className="dark:text-foreground hidden text-emerald-950 opacity-65 sm:inline">New: </span>
+            <span className="dark:text-foreground/85 font-medium">Introducing Veil Kit</span>
             <span className="dark:border-l-foreground/50 ml-2 block size-0 border-y-4 border-l-4 border-y-transparent border-l-emerald-950/50" />
         </Link>
         <BorderBeam className="from-emerald-200 via-emerald-500 to-transparent" />
