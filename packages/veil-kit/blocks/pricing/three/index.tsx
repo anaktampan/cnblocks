@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Button } from '@veil/components/ui/button'
 import { Card } from '@veil/components/ui/card'
 import { Check, ArrowRight } from 'lucide-react'
+import { cn } from '@tailark/core/lib/utils'
 
 const plans = [
     {
@@ -35,8 +36,7 @@ export default function Pricing() {
                         <Card
                             key={plan.name}
                             variant={plan.highlighted ? 'default' : 'mixed'}
-                            className={`relative p-6 ${plan.highlighted ? 'ring-primary' : ''}`}>
-                            {plan.badge && <div className="bg-primary/50 text-primary-foreground absolute -top-3 left-4 rounded-full px-2 py-0.5 text-xs font-medium backdrop-blur">{plan.badge}</div>}
+                            className={cn('relative p-6', plan.highlighted && 'ring-primary')}>
                             <div className="mb-6">
                                 <h3 className="text-foreground font-medium">{plan.name}</h3>
                                 <p className="text-muted-foreground mt-1 text-sm">{plan.description}</p>
