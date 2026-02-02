@@ -259,7 +259,7 @@
       ]
     },
     {
-      "name": "call-to-action-1",
+      "name": "veil-call-to-action-1",
       "type": "registry:block",
       "title": "Call To Action 1",
       "description": "Tailark Veil call-to-action block",
@@ -275,7 +275,7 @@
       ]
     },
     {
-      "name": "call-to-action-2",
+      "name": "veil-call-to-action-2",
       "type": "registry:block",
       "title": "Call To Action 2",
       "description": "Tailark Veil call-to-action block",
@@ -292,7 +292,7 @@
       ]
     },
     {
-      "name": "call-to-action-3",
+      "name": "veil-call-to-action-3",
       "type": "registry:block",
       "title": "Call To Action 3",
       "description": "Tailark Veil call-to-action block",
@@ -308,7 +308,7 @@
       ]
     },
     {
-      "name": "call-to-action-4",
+      "name": "veil-call-to-action-4",
       "type": "registry:block",
       "title": "Call To Action 4",
       "description": "Tailark Veil call-to-action block",
@@ -325,7 +325,7 @@
       ]
     },
     {
-      "name": "comparator-1",
+      "name": "veil-comparator-1",
       "type": "registry:block",
       "title": "Comparator 1",
       "description": "Tailark Veil comparator block",
@@ -342,7 +342,7 @@
       ]
     },
     {
-      "name": "comparator-2",
+      "name": "veil-comparator-2",
       "type": "registry:block",
       "title": "Comparator 2",
       "description": "Tailark Veil comparator block",
@@ -359,7 +359,7 @@
       ]
     },
     {
-      "name": "comparator-3",
+      "name": "veil-comparator-3",
       "type": "registry:block",
       "title": "Comparator 3",
       "description": "Tailark Veil comparator block",
@@ -376,7 +376,7 @@
       ]
     },
     {
-      "name": "contact-1",
+      "name": "veil-contact-1",
       "type": "registry:block",
       "title": "Contact 1",
       "description": "Tailark Veil contact block",
@@ -395,7 +395,7 @@
       ]
     },
     {
-      "name": "contact-2",
+      "name": "veil-contact-2",
       "type": "registry:block",
       "title": "Contact 2",
       "description": "Tailark Veil contact block",
@@ -414,7 +414,7 @@
       ]
     },
     {
-      "name": "content-1",
+      "name": "veil-content-1",
       "type": "registry:block",
       "title": "Content 1",
       "description": "Tailark Veil content block",
@@ -427,7 +427,7 @@
       ]
     },
     {
-      "name": "content-2",
+      "name": "veil-content-2",
       "type": "registry:block",
       "title": "Content 2",
       "description": "Tailark Veil content block",
@@ -440,7 +440,7 @@
       ]
     },
     {
-      "name": "content-3",
+      "name": "veil-content-3",
       "type": "registry:block",
       "title": "Content 3",
       "description": "Tailark Veil content block",
@@ -453,7 +453,7 @@
       ]
     },
     {
-      "name": "faqs-1",
+      "name": "veil-faqs-1",
       "type": "registry:block",
       "title": "Faqs 1",
       "description": "Tailark Veil faqs block",
@@ -469,7 +469,7 @@
       ]
     },
     {
-      "name": "faqs-2",
+      "name": "veil-faqs-2",
       "type": "registry:block",
       "title": "Faqs 2",
       "description": "Tailark Veil faqs block",
@@ -482,7 +482,7 @@
       ]
     },
     {
-      "name": "faqs-3",
+      "name": "veil-faqs-3",
       "type": "registry:block",
       "title": "Faqs 3",
       "description": "Tailark Veil faqs block",
@@ -495,7 +495,7 @@
       ]
     },
     {
-      "name": "faqs-4",
+      "name": "veil-faqs-4",
       "type": "registry:block",
       "title": "Faqs 4",
       "description": "Tailark Veil faqs block",
@@ -511,7 +511,7 @@
       ]
     },
     {
-      "name": "faqs-5",
+      "name": "veil-faqs-5",
       "type": "registry:block",
       "title": "Faqs 5",
       "description": "Tailark Veil faqs block",
@@ -527,7 +527,7 @@
       ]
     },
     {
-      "name": "features-1",
+      "name": "veil-features-1",
       "type": "registry:block",
       "title": "Features 1",
       "description": "Tailark Veil features block",
@@ -549,7 +549,7 @@
       ]
     },
     {
-      "name": "features-2",
+      "name": "veil-features-2",
       "type": "registry:block",
       "title": "Features 2",
       "description": "Tailark Veil features block",
@@ -571,7 +571,7 @@
       ]
     },
     {
-      "name": "features-3",
+      "name": "veil-features-3",
       "type": "registry:block",
       "title": "Features 3",
       "description": "Tailark Veil features block",
@@ -593,7 +593,7 @@
       ]
     },
     {
-      "name": "footer-1",
+      "name": "veil-footer-1",
       "type": "registry:block",
       "title": "Footer 1",
       "description": "Tailark Veil footer block",
@@ -609,7 +609,7 @@
       ]
     },
     {
-      "name": "footer-2",
+      "name": "veil-footer-2",
       "type": "registry:block",
       "title": "Footer 2",
       "description": "Tailark Veil footer block",
@@ -625,7 +625,7 @@
       ]
     },
     {
-      "name": "footer-3",
+      "name": "veil-footer-3",
       "type": "registry:block",
       "title": "Footer 3",
       "description": "Tailark Veil footer block",
@@ -641,7 +641,7 @@
       ]
     },
     {
-      "name": "footer-4",
+      "name": "veil-footer-4",
       "type": "registry:block",
       "title": "Footer 4",
       "description": "Tailark Veil footer block",
@@ -657,7 +657,7 @@
       ]
     },
     {
-      "name": "footer-5",
+      "name": "veil-footer-5",
       "type": "registry:block",
       "title": "Footer 5",
       "description": "Tailark Veil footer block",
@@ -679,7 +679,7 @@
       ]
     },
     {
-      "name": "footer-6",
+      "name": "veil-footer-6",
       "type": "registry:block",
       "title": "Footer 6",
       "description": "Tailark Veil footer block",
@@ -706,7 +706,7 @@
       ]
     },
     {
-      "name": "forgot-password-1",
+      "name": "veil-forgot-password-1",
       "type": "registry:block",
       "title": "Forgot Password 1",
       "description": "Tailark Veil forgot-password block",
@@ -725,7 +725,7 @@
       ]
     },
     {
-      "name": "forgot-password-2",
+      "name": "veil-forgot-password-2",
       "type": "registry:block",
       "title": "Forgot Password 2",
       "description": "Tailark Veil forgot-password block",
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "name": "forgot-password-3",
+      "name": "veil-forgot-password-3",
       "type": "registry:block",
       "title": "Forgot Password 3",
       "description": "Tailark Veil forgot-password block",
@@ -761,7 +761,7 @@
       ]
     },
     {
-      "name": "hero-section-1",
+      "name": "veil-hero-section-1",
       "type": "registry:block",
       "title": "Hero Section 1",
       "description": "Tailark Veil hero-section block",
@@ -793,7 +793,7 @@
       ]
     },
     {
-      "name": "hero-section-2",
+      "name": "veil-hero-section-2",
       "type": "registry:block",
       "title": "Hero Section 2",
       "description": "Tailark Veil hero-section block",
@@ -825,7 +825,7 @@
       ]
     },
     {
-      "name": "hero-section-3",
+      "name": "veil-hero-section-3",
       "type": "registry:block",
       "title": "Hero Section 3",
       "description": "Tailark Veil hero-section block",
@@ -857,7 +857,7 @@
       ]
     },
     {
-      "name": "hero-section-4",
+      "name": "veil-hero-section-4",
       "type": "registry:block",
       "title": "Hero Section 4",
       "description": "Tailark Veil hero-section block",
@@ -879,7 +879,7 @@
       ]
     },
     {
-      "name": "hero-section-5",
+      "name": "veil-hero-section-5",
       "type": "registry:block",
       "title": "Hero Section 5",
       "description": "Tailark Veil hero-section block",
@@ -896,7 +896,7 @@
       ]
     },
     {
-      "name": "integrations-1",
+      "name": "veil-integrations-1",
       "type": "registry:block",
       "title": "Integrations 1",
       "description": "Tailark Veil integrations block",
@@ -919,7 +919,7 @@
       ]
     },
     {
-      "name": "integrations-2",
+      "name": "veil-integrations-2",
       "type": "registry:block",
       "title": "Integrations 2",
       "description": "Tailark Veil integrations block",
@@ -942,7 +942,7 @@
       ]
     },
     {
-      "name": "login-1",
+      "name": "veil-login-1",
       "type": "registry:block",
       "title": "Login 1",
       "description": "Tailark Veil login block",
@@ -961,7 +961,7 @@
       ]
     },
     {
-      "name": "login-2",
+      "name": "veil-login-2",
       "type": "registry:block",
       "title": "Login 2",
       "description": "Tailark Veil login block",
@@ -979,7 +979,7 @@
       ]
     },
     {
-      "name": "login-3",
+      "name": "veil-login-3",
       "type": "registry:block",
       "title": "Login 3",
       "description": "Tailark Veil login block",
@@ -997,7 +997,7 @@
       ]
     },
     {
-      "name": "logo-cloud-1",
+      "name": "veil-logo-cloud-1",
       "type": "registry:block",
       "title": "Logo Cloud 1",
       "description": "Tailark Veil logo-cloud block",
@@ -1020,7 +1020,7 @@
       ]
     },
     {
-      "name": "logo-cloud-2",
+      "name": "veil-logo-cloud-2",
       "type": "registry:block",
       "title": "Logo Cloud 2",
       "description": "Tailark Veil logo-cloud block",
@@ -1042,7 +1042,7 @@
       ]
     },
     {
-      "name": "pricing-1",
+      "name": "veil-pricing-1",
       "type": "registry:block",
       "title": "Pricing 1",
       "description": "Tailark Veil pricing block",
@@ -1059,7 +1059,7 @@
       ]
     },
     {
-      "name": "pricing-2",
+      "name": "veil-pricing-2",
       "type": "registry:block",
       "title": "Pricing 2",
       "description": "Tailark Veil pricing block",
@@ -1076,7 +1076,7 @@
       ]
     },
     {
-      "name": "pricing-3",
+      "name": "veil-pricing-3",
       "type": "registry:block",
       "title": "Pricing 3",
       "description": "Tailark Veil pricing block",
@@ -1093,7 +1093,7 @@
       ]
     },
     {
-      "name": "sign-up-1",
+      "name": "veil-sign-up-1",
       "type": "registry:block",
       "title": "Sign Up 1",
       "description": "Tailark Veil sign-up block",
@@ -1112,7 +1112,7 @@
       ]
     },
     {
-      "name": "sign-up-2",
+      "name": "veil-sign-up-2",
       "type": "registry:block",
       "title": "Sign Up 2",
       "description": "Tailark Veil sign-up block",
@@ -1130,7 +1130,7 @@
       ]
     },
     {
-      "name": "sign-up-3",
+      "name": "veil-sign-up-3",
       "type": "registry:block",
       "title": "Sign Up 3",
       "description": "Tailark Veil sign-up block",
@@ -1148,7 +1148,7 @@
       ]
     },
     {
-      "name": "stats-1",
+      "name": "veil-stats-1",
       "type": "registry:block",
       "title": "Stats 1",
       "description": "Tailark Veil stats block",
@@ -1161,7 +1161,7 @@
       ]
     },
     {
-      "name": "stats-2",
+      "name": "veil-stats-2",
       "type": "registry:block",
       "title": "Stats 2",
       "description": "Tailark Veil stats block",
@@ -1174,7 +1174,7 @@
       ]
     },
     {
-      "name": "stats-3",
+      "name": "veil-stats-3",
       "type": "registry:block",
       "title": "Stats 3",
       "description": "Tailark Veil stats block",
@@ -1187,7 +1187,7 @@
       ]
     },
     {
-      "name": "stats-4",
+      "name": "veil-stats-4",
       "type": "registry:block",
       "title": "Stats 4",
       "description": "Tailark Veil stats block",
@@ -1200,7 +1200,7 @@
       ]
     },
     {
-      "name": "team-1",
+      "name": "veil-team-1",
       "type": "registry:block",
       "title": "Team 1",
       "description": "Tailark Veil team block",
@@ -1213,7 +1213,7 @@
       ]
     },
     {
-      "name": "team-2",
+      "name": "veil-team-2",
       "type": "registry:block",
       "title": "Team 2",
       "description": "Tailark Veil team block",
@@ -1226,7 +1226,7 @@
       ]
     },
     {
-      "name": "testimonials-1",
+      "name": "veil-testimonials-1",
       "type": "registry:block",
       "title": "Testimonials 1",
       "description": "Tailark Veil testimonials block",
@@ -1239,7 +1239,7 @@
       ]
     },
     {
-      "name": "testimonials-2",
+      "name": "veil-testimonials-2",
       "type": "registry:block",
       "title": "Testimonials 2",
       "description": "Tailark Veil testimonials block",
@@ -1255,7 +1255,7 @@
       ]
     },
     {
-      "name": "testimonials-3",
+      "name": "veil-testimonials-3",
       "type": "registry:block",
       "title": "Testimonials 3",
       "description": "Tailark Veil testimonials block",
@@ -1268,7 +1268,7 @@
       ]
     },
     {
-      "name": "testimonials-4",
+      "name": "veil-testimonials-4",
       "type": "registry:block",
       "title": "Testimonials 4",
       "description": "Tailark Veil testimonials block",
