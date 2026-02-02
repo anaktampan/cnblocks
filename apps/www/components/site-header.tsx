@@ -16,7 +16,7 @@ import useMedia from 'use-media'
 const links = [
     {
         label: 'Blocks',
-        href: '/',
+        href: '/hero-section',
         isNew: false,
     },
     {

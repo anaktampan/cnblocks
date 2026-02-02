@@ -34,9 +34,9 @@ export function ActiveCategoryLinks({ currentKitFullName, currentKitShortName, a
                             href={hasBlocksInKit ? href : '#'}
                             aria-disabled={!hasBlocksInKit}
                             aria-current={isActive ? 'page' : undefined}
-                            className={cn('hover:bg-muted dark:text-muted-foreground hover:text-foreground flex h-7 w-fit items-center text-nowrap rounded-full px-1 text-sm capitalize text-zinc-700 transition-colors duration-200 lg:-mx-2 lg:px-3', {
+                            className={cn('hover:bg-foreground/4 dark:text-muted-foreground hover:text-foreground flex h-7 w-fit items-center text-nowrap rounded-full px-1 text-sm capitalize text-zinc-700 transition-colors duration-200 lg:-mx-2 lg:px-3', {
                                 'text-foreground/75': !isActive && hasBlocksInKit,
-                                'text-foreground!': isActive,
+                                'text-foreground! text-shadow-[0.1px_0_0_currentColor]': isActive,
                                 'pointer-events-none cursor-not-allowed opacity-50': !hasBlocksInKit && !isActive,
                             })}
                             onClick={(e) => !hasBlocksInKit && e.preventDefault()}>

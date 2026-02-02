@@ -10,7 +10,7 @@ export function OpenInV0Button({ registryUrl, title, category }: { registryUrl: 
                 <TooltipTrigger asChild>
                     <Button
                         aria-label="Open in v0"
-                        className="size-8"
+                        className="hover:bg-foreground/4 size-7"
                         variant="ghost"
                         asChild
                         onClick={() =>

@@ -50,7 +50,7 @@ export const CodeEditor = ({ files, code, id, category, lang = 'tsx', maxHeight,
                     <div className="hidden w-64 bg-zinc-950 font-mono text-white [--color-background:var(--color-zinc-900)] [--color-foreground:white] [--color-muted:var(--color-zinc-800)] sm:block dark:bg-zinc-900/25">
                         <div className="pb-5.5 pt-1.5 font-mono text-xs">
                             <div>
-                                <div className="pr-5.5 dark:hover:bg-muted/50 flex items-center gap-1.5 py-2 pl-4 hover:bg-white/5">
+                                <div className="pr-5.5 dark:hover:bg-foreground/4 hover:bg-white/4 flex items-center gap-1.5 py-2 pl-4">
                                     <ChevronDown className="size-4 opacity-50" />
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ export const CodeEditor = ({ files, code, id, category, lang = 'tsx', maxHeight,
                                             key={index}
                                             aria-label={`${name} code`}
                                             value={String(index)}
-                                            className="pr-5.5 dark:hover:bg-muted/50 dark:data-[state=checked]:bg-muted/50 flex w-full items-center gap-1.5 py-2 pl-12 hover:bg-zinc-800/50 data-[state=checked]:bg-zinc-800/50">
+                                            className="pr-5.5 dark:hover:bg-foreground/4 dark:data-[state=checked]:bg-foreground/4t hover:bg-white/4 flex w-full items-center gap-1.5 py-2 pl-12 data-[state=checked]:bg-white/5">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 className="size-3.5"
@@ -111,7 +111,7 @@ export const CodeEditor = ({ files, code, id, category, lang = 'tsx', maxHeight,
                             code={files[activeFileIndex].code}
                             maxHeight={maxHeight}
                             lang={files[activeFileIndex].lang as BundledLanguage}
-                            className={cn('max-w-full overflow-auto', className)}
+                            className={cn('*:border-l-foreground/6.5! max-w-full', className)}
                         />
                     </div>
                 </div>

@@ -128,12 +128,11 @@ export default function BlocksCategoryPage({ params }: { params: Promise<{ slug:
 
     return (
         <>
-            <section>
-                <h1 className="sr-only text-3xl font-bold sm:text-4xl md:text-nowrap">
-                    {kitDisplay} <span className="capitalize">{categoryDisplay}</span> blocks
-                </h1>
-                <div className="h-6 w-full bg-[repeating-linear-gradient(-45deg,var(--color-border),var(--color-border)_1px,transparent_1px,transparent_6px)] opacity-35"></div>
-            </section>
+            <h1 className="sr-only text-3xl font-bold sm:text-4xl md:text-nowrap">
+                {kitDisplay} <span className="capitalize">{categoryDisplay}</span> blocks
+            </h1>
+
+            <div className="h-6" />
 
             {categoryBlocks.map((block, index) => (
                 <BlockPreview

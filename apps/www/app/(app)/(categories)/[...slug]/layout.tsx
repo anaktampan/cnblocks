@@ -39,7 +39,7 @@ export default function CategoryLayout({ children, params }: LayoutProps) {
                 allCategories={allCategories}
                 blocks={blocks}
             />
-            <main>{children}</main>
+            <main className="bg-muted/50 dark:bg-background">{children}</main>
             <SiteFooter />
         </>
     )
