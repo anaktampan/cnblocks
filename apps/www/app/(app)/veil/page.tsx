@@ -174,8 +174,11 @@ export default async function Home() {
                     />
                 ))}
             </section>
-
-            <SiteFooter />
+            <div
+                data-theme="veil"
+                className="bg-background">
+                <SiteFooter />
+            </div>
         </>
     )
 }
