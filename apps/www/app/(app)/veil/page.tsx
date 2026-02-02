@@ -140,7 +140,7 @@ export default async function Home() {
             <section
                 data-theme="veil"
                 className="bg-background">
-                <div className="mx-4 max-w-7xl px-4 py-12 [--color-border:color-mix(in_oklab,var(--color-zinc-200)_75%,transparent)] md:mx-auto dark:[--color-border:color-mix(in_oklab,var(--color-zinc-800)_60%,transparent)]">
+                <div className="mx-4 max-w-7xl px-4 pb-12 pt-24 [--color-border:color-mix(in_oklab,var(--color-zinc-200)_75%,transparent)] md:mx-auto dark:[--color-border:color-mix(in_oklab,var(--color-zinc-800)_60%,transparent)]">
                     <div className="mx-auto max-w-lg text-center">
                         <h1 className="inline-flex flex-wrap justify-center gap-2 text-balance font-serif text-4xl font-medium sm:text-5xl">
                             Shadcn Blocks <span className="text-muted-foreground">for</span> Super Simple <MistKitLogo /> Websites
