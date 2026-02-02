@@ -391,7 +391,8 @@
         "veil-button",
         "veil-card",
         "veil-input",
-        "veil-textarea"
+        "veil-textarea",
+        "@shadcn/label"
       ]
     },
     {
@@ -410,7 +411,9 @@
         "veil-button",
         "veil-card",
         "veil-input",
-        "veil-textarea"
+        "veil-textarea",
+        "@shadcn/label",
+        "@shadcn/select"
       ]
     },
     {
@@ -465,7 +468,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-card"
+        "veil-card",
+        "@shadcn/accordion"
       ]
     },
     {
@@ -479,6 +483,9 @@
           "type": "registry:component",
           "target": "components/faqs-2.tsx"
         }
+      ],
+      "registryDependencies": [
+        "@shadcn/accordion"
       ]
     },
     {
@@ -492,6 +499,9 @@
           "type": "registry:component",
           "target": "components/faqs-3.tsx"
         }
+      ],
+      "registryDependencies": [
+        "@shadcn/accordion"
       ]
     },
     {
@@ -523,7 +533,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-card"
+        "veil-card",
+        "@shadcn/accordion"
       ]
     },
     {
@@ -676,6 +687,9 @@
       "registryDependencies": [
         "veil-button",
         "veil-logo"
+      ],
+      "dependencies": [
+        "next-themes"
       ]
     },
     {
@@ -703,6 +717,9 @@
       "registryDependencies": [
         "veil-button",
         "veil-logo"
+      ],
+      "dependencies": [
+        "next-themes"
       ]
     },
     {
@@ -721,7 +738,8 @@
         "veil-button",
         "veil-card",
         "veil-input",
-        "veil-logo"
+        "veil-logo",
+        "@shadcn/label"
       ]
     },
     {
@@ -739,7 +757,8 @@
       "registryDependencies": [
         "veil-button",
         "veil-input",
-        "veil-logo"
+        "veil-logo",
+        "@shadcn/label"
       ]
     },
     {
@@ -757,7 +776,8 @@
       "registryDependencies": [
         "veil-button",
         "veil-input",
-        "veil-logo"
+        "veil-logo",
+        "@shadcn/label"
       ]
     },
     {
@@ -804,6 +824,11 @@
           "target": "components/header.tsx"
         },
         {
+          "path": "../../packages/core/src/hooks/use-media.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-media.ts"
+        },
+        {
           "path": "../../packages/veil-kit/blocks/hero-section/two/index.tsx",
           "type": "registry:component",
           "target": "components/hero-section-2.tsx"
@@ -822,6 +847,9 @@
         "veil-supabase",
         "veil-twilio",
         "veil-vercel"
+      ],
+      "dependencies": [
+        "motion"
       ]
     },
     {
@@ -865,7 +893,12 @@
         {
           "path": "../../packages/veil-kit/blocks/hero-section/four/header.tsx",
           "type": "registry:component",
-          "target": "components/hero-section-4/header.tsx"
+          "target": "components/header.tsx"
+        },
+        {
+          "path": "../../packages/core/src/hooks/use-media.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-media.ts"
         },
         {
           "path": "../../packages/veil-kit/blocks/hero-section/four/index.tsx",
@@ -876,6 +909,9 @@
       "registryDependencies": [
         "veil-button",
         "veil-logo"
+      ],
+      "dependencies": [
+        "motion"
       ]
     },
     {
@@ -957,7 +993,8 @@
         "veil-button",
         "veil-card",
         "veil-input",
-        "veil-logo"
+        "veil-logo",
+        "@shadcn/label"
       ]
     },
     {
@@ -975,7 +1012,8 @@
       "registryDependencies": [
         "veil-button",
         "veil-input",
-        "veil-logo"
+        "veil-logo",
+        "@shadcn/label"
       ]
     },
     {
@@ -993,7 +1031,8 @@
       "registryDependencies": [
         "veil-button",
         "veil-input",
-        "veil-logo"
+        "veil-logo",
+        "@shadcn/label"
       ]
     },
     {
@@ -1039,6 +1078,9 @@
         "veil-spotify",
         "veil-supabase",
         "veil-vercel"
+      ],
+      "dependencies": [
+        "motion"
       ]
     },
     {
@@ -1108,7 +1150,8 @@
         "veil-button",
         "veil-card",
         "veil-input",
-        "veil-logo"
+        "veil-logo",
+        "@shadcn/label"
       ]
     },
     {
@@ -1126,7 +1169,8 @@
       "registryDependencies": [
         "veil-button",
         "veil-input",
-        "veil-logo"
+        "veil-logo",
+        "@shadcn/label"
       ]
     },
     {
@@ -1144,7 +1188,8 @@
       "registryDependencies": [
         "veil-button",
         "veil-input",
-        "veil-logo"
+        "veil-logo",
+        "@shadcn/label"
       ]
     },
     {
