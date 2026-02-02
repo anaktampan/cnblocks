@@ -89,7 +89,7 @@ export const SiteHeader = () => {
                                     asChild
                                     size="sm"
                                     variant="ghost"
-                                    className={cn('text-foreground/75 rounded-full', isActive(link.href) && 'text-foreground')}>
+                                    className={cn('text-foreground/75 hover:bg-foreground/4 rounded-full', isActive(link.href) && 'text-foreground')}>
                                     <Link
                                         href={link.href}
                                         className="!text-sm">
