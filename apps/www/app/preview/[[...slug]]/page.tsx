@@ -1,7 +1,16 @@
-import BlockRenderer from './block-renderer'
-import { cn } from '@tailark/core/lib/utils'
-import { use } from 'react'
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
+import { DevToolbar } from '@/components/toolbar'
+import { notFound } from 'next/navigation'
+import { blocks } from '@/data/blocks'
+
+export async function generateStaticParams() {
+    return blocks.flatMap((block) => {
+        const kitShortName = block.kit?.replace('-kit', '') || 'mist'
+        return {
+            slug: [kitShortName, block.category, block.id],
+        }
+    })
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {
     const { slug } = await params
@@ -11,10 +20,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     }
 
     const [kitShortName, category, variant] = slug
+
     const categoryDisplay = category
         .split('-')
         .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
         .join(' ')
+
     const variantDisplay = variant
         .split('-')
         .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
@@ -31,27 +42,57 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             card: 'summary_large_image',
             images: [`/og?type=preview&slug=${slug.join(',')}`],
         },
+        alternates: {
+            canonical: `/preview/${kitShortName}/${category}/${variant}`,
+        },
     }
 }
 
-export default function PreviewPage({ params }: { params: Promise<{ slug: string[] }> }) {
-    const { slug } = use(params)
+async function getParams({ params }: { params: Promise<{ slug: string[] }> }) {
+    const { slug } = await params
+
+    return slug
+}
+
+export default async function PreviewPage({ params }: { params: Promise<{ slug: string[] }> }) {
+    const slug = await getParams({ params })
 
     if (!slug || slug.length < 3) {
-        return <div className="flex h-screen items-center justify-center">Invalid path. Please use the format /preview/kit-name/category/variant.</div>
+        notFound()
     }
 
     const [kitShortName, category, variant] = slug
 
     return (
-        <div
-            data-theme={kitShortName === 'mist' && 'mist'}
-            className={cn(kitShortName === 'mist' && 'scheme-light bg-background')}>
-            <BlockRenderer
-                kitShortName={kitShortName}
-                category={category}
-                variant={variant}
-            />
-        </div>
+        <>
+            {process.env.NODE_ENV === 'development' && <DevToolbar />}
+
+            <div
+                data-theme={kitShortName === 'mist' ? 'mist' : kitShortName === 'veil' ? 'veil' : ''}
+                className="scheme-light selection:bg-foreground/10 selection:text-primary dark:selection:bg-foreground/10 bg-background dark:scheme-dark">
+                <LazyBlock
+                    kitShortName={kitShortName}
+                    category={category}
+                    variant={variant}
+                />
+            </div>
+        </>
     )
+}
+
+async function LazyBlock({ kitShortName, category, variant }: { kitShortName: string; category: string; variant: string }) {
+    'use cache'
+    try {
+        const BlockModule = await import(`./../../../../../packages/${kitShortName}-kit/blocks/${category}/${variant}`)
+        const Block = BlockModule.default
+
+        if (!Block) {
+            notFound()
+        }
+
+        return <Block />
+    } catch (error) {
+        console.error(`Failed to load block: ${category}/${variant}`, error)
+        notFound()
+    }
 }

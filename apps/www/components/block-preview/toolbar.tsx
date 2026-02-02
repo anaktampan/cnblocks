@@ -17,9 +17,8 @@ import { NPM } from '@tailark/core/components/logos/npm'
 import { Pnpm } from '@tailark/core/components/logos/pnpm'
 import { useStore } from '@nanostores/react'
 import { promptStore, setPrompt } from '@/lib/store/prompt'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@tailark/core/ui/tooltip'
 
-const radioItem = 'rounded-md duration-200 flex items-center justify-center h-8 px-2.5 gap-2 transition-[color] data-[state=checked]:bg-muted'
+const radioItem = 'rounded-md duration-200 flex items-center justify-center h-7 px-2.5 gap-2 transition-[color] ring ring-transparent shadow shadow-transparent not-data-[state=checked]:hover:bg-foreground/4 data-[state=checked]:ring-foreground/6.5 data-[state=checked]:shadow-black/6.5 data-[state=checked]:bg-card dark:data-[state=checked]:bg-foreground/4'
 
 export const DEFAULTSIZE = 100
 export const SMSIZE = 30
@@ -53,7 +52,7 @@ const BlockPreviewToolbar: React.FC<BlockPreviewToolbarProps> = ({ mode, onModeC
     const prompt = useStore(promptStore)
 
     return (
-        <div className="relative z-10 mx-auto flex h-12 max-w-7xl justify-between pl-8 pr-6 [--color-border:var(--color-zinc-200)] md:py-2 lg:pl-5 lg:pr-2 dark:[--color-border:var(--color-zinc-800)]">
+        <div className="relative z-10 mx-auto flex h-12 max-w-7xl justify-between pl-8 pr-6 md:py-2 lg:pl-5 lg:pr-2">
             <div className="-ml-3 flex items-center gap-3">
                 {codeAvailable && !previewOnly && (
                     <>
@@ -84,7 +83,7 @@ const BlockPreviewToolbar: React.FC<BlockPreviewToolbarProps> = ({ mode, onModeC
                         />
                         <TooltipButton
                             tooltip="View in full screen"
-                            className="size-8"
+                            className="hover:bg-foreground/4 size-7"
                             icon={<Maximize className="size-4" />}
                             asLink={{
                                 href: previewLink,
@@ -102,7 +101,7 @@ const BlockPreviewToolbar: React.FC<BlockPreviewToolbarProps> = ({ mode, onModeC
                         />
                         <TooltipButton
                             tooltip="View in full screen"
-                            className="size-8"
+                            className="hover:bg-foreground/4 size-7"
                             icon={<Maximize className="size-4" />}
                             asLink={{
                                 href: previewLink,
@@ -121,19 +120,15 @@ const BlockPreviewToolbar: React.FC<BlockPreviewToolbarProps> = ({ mode, onModeC
                                 <Select
                                     defaultValue={prompt}
                                     value={prompt}
-                                    onValueChange={(value: Prompt) => setPrompt(value)}>
-                                    <TooltipProvider>
-                                        <Tooltip delayDuration={0}>
-                                            <TooltipTrigger asChild>
-                                                <SelectTrigger
-                                                    aria-label="Select a package manager"
-                                                    className="border-(--from-color) hover:bg-muted h-8 w-9 rounded-md rounded-r-none border-y border-l border-r-0 px-0 shadow-none *:mx-auto *:data-[slot=select-icon]:hidden">
-                                                    <SelectValue placeholder="Select a package manager" />
-                                                </SelectTrigger>
-                                            </TooltipTrigger>
-                                            <TooltipContent>Change package manager</TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
+                                    onValueChange={(value: Prompt) => {
+                                        setPrompt(value)
+                                    }}>
+                                    <SelectTrigger
+                                        aria-label="Select a package manager"
+                                        className="hover:bg-foreground/4 h-7 gap-2 rounded-md border-none pl-2 pr-1 shadow-none *:mx-auto">
+                                        <SelectValue placeholder="Select a package manager" />
+                                    </SelectTrigger>
+
                                     <SelectContent
                                         position="item-aligned"
                                         align="center"
@@ -170,21 +165,21 @@ const BlockPreviewToolbar: React.FC<BlockPreviewToolbarProps> = ({ mode, onModeC
                                 size="sm"
                                 aria-label="Copy CLI"
                                 data-slot="btn"
-                                className={cn('hover:bg-linear-to-l hover:from-muted peer-hover:bg-linear-to-r border-(--from-color) peer-hover:from-muted relative rounded-l-none border-y border-r pl-0.5 transition-none hover:bg-transparent hover:from-85%')}>
+                                className={cn('hover:bg-foreground/4 relative h-7 px-2 transition-none')}>
                                 <AnimatePresence mode="popLayout">
                                     {cliCopied && (
                                         <motion.span
                                             key="copied"
-                                            initial={{ opacity: 0, y: -10, filter: 'blur(6px)' }}
-                                            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                                            exit={{ opacity: 0, y: 16, filter: 'blur(6px)' }}
-                                            transition={{ duration: 0.3 }}
-                                            className="absolute inset-0 my-auto size-fit text-emerald-600 dark:text-emerald-400">
+                                            initial={{ opacity: 0, filter: 'blur(4px)' }}
+                                            animate={{ opacity: 1, filter: 'blur(0px)' }}
+                                            exit={{ opacity: 0, filter: 'blur(4px)' }}
+                                            transition={{ duration: 0.2 }}
+                                            className="absolute inset-0 my-auto size-fit px-2 text-emerald-600 dark:text-emerald-400">
                                             Copied!
                                         </motion.span>
                                     )}
                                 </AnimatePresence>
-                                <span className={cn('hidden origin-left font-mono text-xs duration-300 md:block', cliCopied && 'scale-90 opacity-0 blur')}>
+                                <span className={cn('hidden origin-left font-mono text-xs duration-300 md:block', cliCopied && 'blur-xs opacity-0')}>
                                     {prompts[prompt]} shadcn add @tailark/{kit}
                                     {category}-{titleToNumber(id)}
                                 </span>

@@ -42,7 +42,7 @@ function loadCode(filePath: string): string {
             return `from "@/components/${importPath}"`
         })
 
-        code = code.replace('@mist', '@')
+        code = code.replace(/@mist|@veil/g, '@')
         
         return code
     }

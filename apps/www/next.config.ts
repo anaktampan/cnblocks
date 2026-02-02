@@ -2,6 +2,7 @@
 
 const nextConfig = {
     productionBrowserSourceMaps: true,
+    cacheComponents: true,
     images: {
         remotePatterns: [
             {
@@ -15,6 +16,18 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'pro.tailark.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'avatars.githubusercontent.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'raw.githubusercontent.com',
             },
         ],
     },
