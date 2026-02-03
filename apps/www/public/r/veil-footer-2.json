@@ -5,7 +5,7 @@
   "title": "Footer 2",
   "description": "Tailark Veil footer block",
   "registryDependencies": [
-    "veil-logo"
+    "@tailark/veil-logo"
   ],
   "files": [
     {

@@ -5,8 +5,8 @@
   "title": "Hero Section 5",
   "description": "Tailark Veil hero-section block",
   "registryDependencies": [
-    "veil-button",
-    "veil-logo"
+    "@tailark/veil-button",
+    "@tailark/veil-logo"
   ],
   "files": [
     {

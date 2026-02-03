@@ -5,8 +5,8 @@
   "title": "Comparator 1",
   "description": "Tailark Veil comparator block",
   "registryDependencies": [
-    "veil-button",
-    "veil-card"
+    "@tailark/veil-button",
+    "@tailark/veil-card"
   ],
   "files": [
     {

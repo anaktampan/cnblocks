@@ -5,8 +5,8 @@
   "title": "Pricing 3",
   "description": "Tailark Veil pricing block",
   "registryDependencies": [
-    "veil-button",
-    "veil-card"
+    "@tailark/veil-button",
+    "@tailark/veil-card"
   ],
   "files": [
     {

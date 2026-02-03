@@ -5,14 +5,14 @@
   "title": "Logo Cloud 1",
   "description": "Tailark Veil logo-cloud block",
   "registryDependencies": [
-    "veil-beacon",
-    "veil-bolt",
-    "veil-cisco",
-    "veil-hulu",
-    "veil-linear",
-    "veil-spotify",
-    "veil-supabase",
-    "veil-vercel"
+    "@tailark/veil-beacon",
+    "@tailark/veil-bolt",
+    "@tailark/veil-cisco",
+    "@tailark/veil-hulu",
+    "@tailark/veil-linear",
+    "@tailark/veil-spotify",
+    "@tailark/veil-supabase",
+    "@tailark/veil-vercel"
   ],
   "files": [
     {

@@ -5,13 +5,13 @@
   "title": "Features 2",
   "description": "Tailark Veil features block",
   "registryDependencies": [
-    "veil-card",
-    "veil-clerk",
-    "veil-firebase",
-    "veil-linear",
-    "veil-slack",
-    "veil-supabase",
-    "veil-vercel"
+    "@tailark/veil-card",
+    "@tailark/veil-clerk",
+    "@tailark/veil-firebase",
+    "@tailark/veil-linear",
+    "@tailark/veil-slack",
+    "@tailark/veil-supabase",
+    "@tailark/veil-vercel"
   ],
   "files": [
     {

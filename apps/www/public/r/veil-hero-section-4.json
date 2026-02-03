@@ -8,8 +8,8 @@
     "motion"
   ],
   "registryDependencies": [
-    "veil-button",
-    "veil-logo"
+    "@tailark/veil-button",
+    "@tailark/veil-logo"
   ],
   "files": [
     {

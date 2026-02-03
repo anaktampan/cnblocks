@@ -5,18 +5,18 @@
   "title": "Hero Section 3",
   "description": "Tailark Veil hero-section block",
   "registryDependencies": [
-    "veil-button",
-    "veil-card",
-    "veil-claude",
-    "veil-clerk",
-    "veil-figma",
-    "veil-firebase",
-    "veil-linear",
-    "veil-logo",
-    "veil-slack",
-    "veil-supabase",
-    "veil-twilio",
-    "veil-vercel"
+    "@tailark/veil-button",
+    "@tailark/veil-card",
+    "@tailark/veil-claude",
+    "@tailark/veil-clerk",
+    "@tailark/veil-figma",
+    "@tailark/veil-firebase",
+    "@tailark/veil-linear",
+    "@tailark/veil-logo",
+    "@tailark/veil-slack",
+    "@tailark/veil-supabase",
+    "@tailark/veil-twilio",
+    "@tailark/veil-vercel"
   ],
   "files": [
     {

@@ -5,8 +5,8 @@
   "title": "Call To Action 2",
   "description": "Tailark Veil call-to-action block",
   "registryDependencies": [
-    "veil-button",
-    "veil-card"
+    "@tailark/veil-button",
+    "@tailark/veil-card"
   ],
   "files": [
     {

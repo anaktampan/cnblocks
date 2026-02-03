@@ -5,7 +5,7 @@
   "title": "Call To Action 1",
   "description": "Tailark Veil call-to-action block",
   "registryDependencies": [
-    "veil-button"
+    "@tailark/veil-button"
   ],
   "files": [
     {

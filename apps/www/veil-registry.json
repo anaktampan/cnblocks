@@ -271,7 +271,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-button"
+        "@tailark/veil-button"
       ]
     },
     {
@@ -287,8 +287,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card"
+        "@tailark/veil-button",
+        "@tailark/veil-card"
       ]
     },
     {
@@ -304,7 +304,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-button"
+        "@tailark/veil-button"
       ]
     },
     {
@@ -320,8 +320,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card"
+        "@tailark/veil-button",
+        "@tailark/veil-card"
       ]
     },
     {
@@ -337,8 +337,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card"
+        "@tailark/veil-button",
+        "@tailark/veil-card"
       ]
     },
     {
@@ -354,8 +354,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card"
+        "@tailark/veil-button",
+        "@tailark/veil-card"
       ]
     },
     {
@@ -371,8 +371,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card"
+        "@tailark/veil-button",
+        "@tailark/veil-card"
       ]
     },
     {
@@ -388,10 +388,10 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card",
-        "veil-input",
-        "veil-textarea",
+        "@tailark/veil-button",
+        "@tailark/veil-card",
+        "@tailark/veil-input",
+        "@tailark/veil-textarea",
         "@shadcn/label"
       ]
     },
@@ -408,10 +408,10 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card",
-        "veil-input",
-        "veil-textarea",
+        "@tailark/veil-button",
+        "@tailark/veil-card",
+        "@tailark/veil-input",
+        "@tailark/veil-textarea",
         "@shadcn/label",
         "@shadcn/select"
       ]
@@ -468,7 +468,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-card",
+        "@tailark/veil-card",
         "@shadcn/accordion"
       ]
     },
@@ -517,7 +517,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-card"
+        "@tailark/veil-card"
       ]
     },
     {
@@ -533,7 +533,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-card",
+        "@tailark/veil-card",
         "@shadcn/accordion"
       ]
     },
@@ -550,13 +550,13 @@
         }
       ],
       "registryDependencies": [
-        "veil-card",
-        "veil-clerk",
-        "veil-firebase",
-        "veil-linear",
-        "veil-slack",
-        "veil-supabase",
-        "veil-vercel"
+        "@tailark/veil-card",
+        "@tailark/veil-clerk",
+        "@tailark/veil-firebase",
+        "@tailark/veil-linear",
+        "@tailark/veil-slack",
+        "@tailark/veil-supabase",
+        "@tailark/veil-vercel"
       ]
     },
     {
@@ -572,13 +572,13 @@
         }
       ],
       "registryDependencies": [
-        "veil-card",
-        "veil-clerk",
-        "veil-firebase",
-        "veil-linear",
-        "veil-slack",
-        "veil-supabase",
-        "veil-vercel"
+        "@tailark/veil-card",
+        "@tailark/veil-clerk",
+        "@tailark/veil-firebase",
+        "@tailark/veil-linear",
+        "@tailark/veil-slack",
+        "@tailark/veil-supabase",
+        "@tailark/veil-vercel"
       ]
     },
     {
@@ -594,13 +594,13 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-clerk",
-        "veil-firebase",
-        "veil-linear",
-        "veil-slack",
-        "veil-supabase",
-        "veil-vercel"
+        "@tailark/veil-button",
+        "@tailark/veil-clerk",
+        "@tailark/veil-firebase",
+        "@tailark/veil-linear",
+        "@tailark/veil-slack",
+        "@tailark/veil-supabase",
+        "@tailark/veil-vercel"
       ]
     },
     {
@@ -616,7 +616,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-logo"
+        "@tailark/veil-logo"
       ]
     },
     {
@@ -632,7 +632,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-logo"
+        "@tailark/veil-logo"
       ]
     },
     {
@@ -648,7 +648,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-logo"
+        "@tailark/veil-logo"
       ]
     },
     {
@@ -664,7 +664,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-logo"
+        "@tailark/veil-logo"
       ]
     },
     {
@@ -685,8 +685,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-logo"
+        "@tailark/veil-button",
+        "@tailark/veil-logo"
       ],
       "dependencies": [
         "next-themes"
@@ -715,8 +715,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-logo"
+        "@tailark/veil-button",
+        "@tailark/veil-logo"
       ],
       "dependencies": [
         "next-themes"
@@ -735,10 +735,10 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card",
-        "veil-input",
-        "veil-logo",
+        "@tailark/veil-button",
+        "@tailark/veil-card",
+        "@tailark/veil-input",
+        "@tailark/veil-logo",
         "@shadcn/label"
       ]
     },
@@ -755,9 +755,9 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-input",
-        "veil-logo",
+        "@tailark/veil-button",
+        "@tailark/veil-input",
+        "@tailark/veil-logo",
         "@shadcn/label"
       ]
     },
@@ -774,9 +774,9 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-input",
-        "veil-logo",
+        "@tailark/veil-button",
+        "@tailark/veil-input",
+        "@tailark/veil-logo",
         "@shadcn/label"
       ]
     },
@@ -798,18 +798,18 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card",
-        "veil-claude",
-        "veil-clerk",
-        "veil-figma",
-        "veil-firebase",
-        "veil-linear",
-        "veil-logo",
-        "veil-slack",
-        "veil-supabase",
-        "veil-twilio",
-        "veil-vercel"
+        "@tailark/veil-button",
+        "@tailark/veil-card",
+        "@tailark/veil-claude",
+        "@tailark/veil-clerk",
+        "@tailark/veil-figma",
+        "@tailark/veil-firebase",
+        "@tailark/veil-linear",
+        "@tailark/veil-logo",
+        "@tailark/veil-slack",
+        "@tailark/veil-supabase",
+        "@tailark/veil-twilio",
+        "@tailark/veil-vercel"
       ]
     },
     {
@@ -835,18 +835,18 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card",
-        "veil-claude",
-        "veil-clerk",
-        "veil-figma",
-        "veil-firebase",
-        "veil-linear",
-        "veil-logo",
-        "veil-slack",
-        "veil-supabase",
-        "veil-twilio",
-        "veil-vercel"
+        "@tailark/veil-button",
+        "@tailark/veil-card",
+        "@tailark/veil-claude",
+        "@tailark/veil-clerk",
+        "@tailark/veil-figma",
+        "@tailark/veil-firebase",
+        "@tailark/veil-linear",
+        "@tailark/veil-logo",
+        "@tailark/veil-slack",
+        "@tailark/veil-supabase",
+        "@tailark/veil-twilio",
+        "@tailark/veil-vercel"
       ],
       "dependencies": [
         "motion"
@@ -870,18 +870,18 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card",
-        "veil-claude",
-        "veil-clerk",
-        "veil-figma",
-        "veil-firebase",
-        "veil-linear",
-        "veil-logo",
-        "veil-slack",
-        "veil-supabase",
-        "veil-twilio",
-        "veil-vercel"
+        "@tailark/veil-button",
+        "@tailark/veil-card",
+        "@tailark/veil-claude",
+        "@tailark/veil-clerk",
+        "@tailark/veil-figma",
+        "@tailark/veil-firebase",
+        "@tailark/veil-linear",
+        "@tailark/veil-logo",
+        "@tailark/veil-slack",
+        "@tailark/veil-supabase",
+        "@tailark/veil-twilio",
+        "@tailark/veil-vercel"
       ]
     },
     {
@@ -907,8 +907,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-logo"
+        "@tailark/veil-button",
+        "@tailark/veil-logo"
       ],
       "dependencies": [
         "motion"
@@ -927,8 +927,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-logo"
+        "@tailark/veil-button",
+        "@tailark/veil-logo"
       ]
     },
     {
@@ -944,14 +944,14 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-clerk",
-        "veil-firebase",
-        "veil-linear",
-        "veil-logo",
-        "veil-slack",
-        "veil-supabase",
-        "veil-vercel"
+        "@tailark/veil-button",
+        "@tailark/veil-clerk",
+        "@tailark/veil-firebase",
+        "@tailark/veil-linear",
+        "@tailark/veil-logo",
+        "@tailark/veil-slack",
+        "@tailark/veil-supabase",
+        "@tailark/veil-vercel"
       ]
     },
     {
@@ -967,14 +967,14 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-clerk",
-        "veil-firebase",
-        "veil-linear",
-        "veil-logo",
-        "veil-slack",
-        "veil-supabase",
-        "veil-vercel"
+        "@tailark/veil-button",
+        "@tailark/veil-clerk",
+        "@tailark/veil-firebase",
+        "@tailark/veil-linear",
+        "@tailark/veil-logo",
+        "@tailark/veil-slack",
+        "@tailark/veil-supabase",
+        "@tailark/veil-vercel"
       ]
     },
     {
@@ -990,10 +990,10 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card",
-        "veil-input",
-        "veil-logo",
+        "@tailark/veil-button",
+        "@tailark/veil-card",
+        "@tailark/veil-input",
+        "@tailark/veil-logo",
         "@shadcn/label"
       ]
     },
@@ -1010,9 +1010,9 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-input",
-        "veil-logo",
+        "@tailark/veil-button",
+        "@tailark/veil-input",
+        "@tailark/veil-logo",
         "@shadcn/label"
       ]
     },
@@ -1029,9 +1029,9 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-input",
-        "veil-logo",
+        "@tailark/veil-button",
+        "@tailark/veil-input",
+        "@tailark/veil-logo",
         "@shadcn/label"
       ]
     },
@@ -1048,14 +1048,14 @@
         }
       ],
       "registryDependencies": [
-        "veil-beacon",
-        "veil-bolt",
-        "veil-cisco",
-        "veil-hulu",
-        "veil-linear",
-        "veil-spotify",
-        "veil-supabase",
-        "veil-vercel"
+        "@tailark/veil-beacon",
+        "@tailark/veil-bolt",
+        "@tailark/veil-cisco",
+        "@tailark/veil-hulu",
+        "@tailark/veil-linear",
+        "@tailark/veil-spotify",
+        "@tailark/veil-supabase",
+        "@tailark/veil-vercel"
       ]
     },
     {
@@ -1071,13 +1071,13 @@
         }
       ],
       "registryDependencies": [
-        "veil-beacon",
-        "veil-bolt",
-        "veil-cisco",
-        "veil-hulu",
-        "veil-spotify",
-        "veil-supabase",
-        "veil-vercel"
+        "@tailark/veil-beacon",
+        "@tailark/veil-bolt",
+        "@tailark/veil-cisco",
+        "@tailark/veil-hulu",
+        "@tailark/veil-spotify",
+        "@tailark/veil-supabase",
+        "@tailark/veil-vercel"
       ],
       "dependencies": [
         "motion"
@@ -1096,8 +1096,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card"
+        "@tailark/veil-button",
+        "@tailark/veil-card"
       ]
     },
     {
@@ -1113,8 +1113,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card"
+        "@tailark/veil-button",
+        "@tailark/veil-card"
       ]
     },
     {
@@ -1130,8 +1130,8 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card"
+        "@tailark/veil-button",
+        "@tailark/veil-card"
       ]
     },
     {
@@ -1147,10 +1147,10 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-card",
-        "veil-input",
-        "veil-logo",
+        "@tailark/veil-button",
+        "@tailark/veil-card",
+        "@tailark/veil-input",
+        "@tailark/veil-logo",
         "@shadcn/label"
       ]
     },
@@ -1167,9 +1167,9 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-input",
-        "veil-logo",
+        "@tailark/veil-button",
+        "@tailark/veil-input",
+        "@tailark/veil-logo",
         "@shadcn/label"
       ]
     },
@@ -1186,9 +1186,9 @@
         }
       ],
       "registryDependencies": [
-        "veil-button",
-        "veil-input",
-        "veil-logo",
+        "@tailark/veil-button",
+        "@tailark/veil-input",
+        "@tailark/veil-logo",
         "@shadcn/label"
       ]
     },
@@ -1296,7 +1296,7 @@
         }
       ],
       "registryDependencies": [
-        "veil-card"
+        "@tailark/veil-card"
       ]
     },
     {

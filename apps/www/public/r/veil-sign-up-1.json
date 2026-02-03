@@ -5,10 +5,10 @@
   "title": "Sign Up 1",
   "description": "Tailark Veil sign-up block",
   "registryDependencies": [
-    "veil-button",
-    "veil-card",
-    "veil-input",
-    "veil-logo",
+    "@tailark/veil-button",
+    "@tailark/veil-card",
+    "@tailark/veil-input",
+    "@tailark/veil-logo",
     "@shadcn/label"
   ],
   "files": [

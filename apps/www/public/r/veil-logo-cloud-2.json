@@ -8,13 +8,13 @@
     "motion"
   ],
   "registryDependencies": [
-    "veil-beacon",
-    "veil-bolt",
-    "veil-cisco",
-    "veil-hulu",
-    "veil-spotify",
-    "veil-supabase",
-    "veil-vercel"
+    "@tailark/veil-beacon",
+    "@tailark/veil-bolt",
+    "@tailark/veil-cisco",
+    "@tailark/veil-hulu",
+    "@tailark/veil-spotify",
+    "@tailark/veil-supabase",
+    "@tailark/veil-vercel"
   ],
   "files": [
     {

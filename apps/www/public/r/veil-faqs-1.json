@@ -5,7 +5,7 @@
   "title": "Faqs 1",
   "description": "Tailark Veil faqs block",
   "registryDependencies": [
-    "veil-card",
+    "@tailark/veil-card",
     "@shadcn/accordion"
   ],
   "files": [

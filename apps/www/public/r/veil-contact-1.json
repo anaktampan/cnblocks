@@ -5,10 +5,10 @@
   "title": "Contact 1",
   "description": "Tailark Veil contact block",
   "registryDependencies": [
-    "veil-button",
-    "veil-card",
-    "veil-input",
-    "veil-textarea",
+    "@tailark/veil-button",
+    "@tailark/veil-card",
+    "@tailark/veil-input",
+    "@tailark/veil-textarea",
     "@shadcn/label"
   ],
   "files": [
