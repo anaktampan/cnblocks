@@ -22,7 +22,7 @@ interface DiscoverBlockCardProps extends Omit<DiscoverCardToolbarProps, 'registr
     licence?: string
 }
 
-export function DiscoverBlockCard({ href, title, subtitle, imageSrc, imageAlt, imageWidth, imageHeight, aspectRatio, imageClassName = '', category, registryItem, eventName, theme, showToolbar = true, licence, disableV0, openInNewTab }: DiscoverBlockCardProps) {
+export function DiscoverBlockCard({ href, title, subtitle, imageSrc, imageAlt, imageWidth, imageHeight, aspectRatio, imageClassName = '', category, registryItem, theme, showToolbar = true, licence, disableV0, openInNewTab }: DiscoverBlockCardProps) {
     const { resolvedTheme } = useTheme()
 
     const isDark = resolvedTheme === 'dark'
@@ -76,7 +76,6 @@ export function DiscoverBlockCard({ href, title, subtitle, imageSrc, imageAlt, i
             registryUrl={registryUrl}
             category={category}
             registryItem={registryItem}
-            eventName={eventName}
             theme={theme}
             isBlock={true}
             licence={licence}

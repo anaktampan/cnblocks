@@ -8,14 +8,13 @@ import { RegistryInstallButton, CLIGroupButtonProps } from '@/components/block-p
 export interface DiscoverCardToolbarProps extends CLIGroupButtonProps {
     href: string
     title: string
-    subtitle: string
     registryUrl: string
     isBlock?: boolean
     disableV0?: boolean
     openInNewTab?: boolean
 }
 
-export const DiscoverCardToolbar = ({ href, isBlock, title, subtitle, registryUrl, eventName, category, registryItem, theme, disableV0, openInNewTab }: DiscoverCardToolbarProps) => {
+export const DiscoverCardToolbar = ({ href, isBlock, title, registryUrl, category, registryItem, theme, disableV0, openInNewTab }: DiscoverCardToolbarProps) => {
     return (
         <>
             <div
@@ -63,7 +62,6 @@ export const DiscoverCardToolbar = ({ href, isBlock, title, subtitle, registryUr
                                     <TooltipTrigger asChild>
                                         <RegistryInstallButton
                                             registryItem={registryItem}
-                                            eventName={eventName}
                                             title={title}
                                             category={category}
                                             theme={theme}
@@ -79,8 +77,6 @@ export const DiscoverCardToolbar = ({ href, isBlock, title, subtitle, registryUr
                             {!disableV0 && (
                                 <OpenInV0Button
                                     registryUrl={registryUrl}
-                                    title={title}
-                                    category={subtitle}
                                     className="h-7 w-9 rounded-none px-0 ring-0"
                                 />
                             )}

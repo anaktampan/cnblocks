@@ -193,11 +193,7 @@ const BlockPreviewToolbar: React.FC<BlockPreviewToolbarProps> = ({ mode, onModeC
                         className="!h-4"
                     />
 
-                    <OpenInV0Button
-                        title={title}
-                        category={category}
-                        registryUrl={`https://tailark.com/r/${category}-${titleToNumber(id)}.json`}
-                    />
+                    <OpenInV0Button registryUrl={`https://tailark.com/r/${category}-${titleToNumber(id)}.json`} />
                 </div>
             )}
         </div>
@@ -209,7 +205,6 @@ export default BlockPreviewToolbar
 export interface CLIGroupButtonProps {
     category: string
     registryItem: string
-    eventName: string
     theme?: string
 }
 
@@ -219,7 +214,7 @@ interface RegistryInstallButtonProps extends Omit<React.ComponentPropsWithoutRef
     className?: string
 }
 
-export const RegistryInstallButton = React.forwardRef<HTMLButtonElement, RegistryInstallButtonProps>(({ registryItem, eventName, title, category, theme, iconOnly, className, onClick, ...buttonProps }, ref) => {
+export const RegistryInstallButton = React.forwardRef<HTMLButtonElement, RegistryInstallButtonProps>(({ registryItem, title, theme, iconOnly, className, onClick, ...buttonProps }, ref) => {
     const prompt = useStore(promptStore)
     const [copied, setCopied] = React.useState(false)
 
@@ -241,8 +236,6 @@ export const RegistryInstallButton = React.forwardRef<HTMLButtonElement, Registr
             <button
                 ref={ref}
                 onClick={handleCopy}
-                data-event-name={eventName}
-                data-category={category}
                 className={cn('flex h-7 w-9 items-center justify-center', className)}
                 aria-label={`Copy install command for ${title}`}
                 {...buttonProps}>
@@ -274,8 +267,6 @@ export const RegistryInstallButton = React.forwardRef<HTMLButtonElement, Registr
         <Button
             ref={ref}
             onClick={handleCopy}
-            data-event-name={eventName}
-            data-category={category}
             variant="ghost"
             size="sm"
             className={cn('h-7 px-2', className)}

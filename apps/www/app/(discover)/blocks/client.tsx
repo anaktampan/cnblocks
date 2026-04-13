@@ -301,7 +301,6 @@ export function BlocksClient() {
                                                     imageClassName={imageClasses}
                                                     category={category.name}
                                                     registryItem=""
-                                                    eventName="block_cli_copy"
                                                     showToolbar={false}
                                                     licence={category.kit === 'quartz-kit' ? 'pro' : 'free'}
                                                     openInNewTab={isQuartz}
@@ -352,7 +351,6 @@ export function BlocksClient() {
                                                 imageClassName={imageClasses}
                                                 category={block.category || ''}
                                                 registryItem={registryItem}
-                                                eventName="block_cli_copy"
                                                 theme={kitName}
                                                 licence={isQuartz ? 'pro' : 'free'}
                                                 disableV0={isQuartz}

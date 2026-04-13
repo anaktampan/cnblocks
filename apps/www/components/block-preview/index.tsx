@@ -39,9 +39,6 @@ const BlockPreview: React.FC<BlockPreviewProps> = ({ code, codes, previewLink, t
 
     const cliCopyProps = {
         code: terminalCode,
-        title: id,
-        category,
-        eventName: 'block_cli_copy' as const,
     }
 
     const { copy: _cliCopy } = useCopyToClipboard(cliCopyProps)

@@ -7,7 +7,7 @@ import CodeBlock from './code-block'
 import { useCopyToClipboard } from '@/hooks/useClipboard'
 
 export default function SnippetPreview({ displayedCode, codeToCopy, description }: { codeToCopy: string; displayedCode: string; description: string }) {
-    const { copied, copy } = useCopyToClipboard({ code: codeToCopy, eventName: 'snippet_copy' })
+    const { copied, copy } = useCopyToClipboard({ code: codeToCopy })
 
     return (
         <Dialog>

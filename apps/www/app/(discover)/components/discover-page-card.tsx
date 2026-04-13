@@ -19,7 +19,7 @@ interface DiscoverPageCardProps extends DiscoverCardToolbarProps {
     openInNewTab?: boolean
 }
 
-export const DiscoverPageCard = ({ category, registryItem, eventName, theme, href, title, subtitle, imageSrc, imageAlt, imageWidth, imageHeight, imageClassName = '', asDialog = false, onClick, registryUrl, disableV0, openInNewTab }: DiscoverPageCardProps) => {
+export const DiscoverPageCard = ({ category, registryItem, theme, href, title, subtitle, imageSrc, imageAlt, imageWidth, imageHeight, imageClassName = '', asDialog = false, onClick, registryUrl, disableV0, openInNewTab }: DiscoverPageCardProps) => {
     const [isToolbarVisible, setIsToolbarVisible] = useState(false)
 
     const handleMouseEnter = () => {
@@ -41,7 +41,6 @@ export const DiscoverPageCard = ({ category, registryItem, eventName, theme, hre
                     title={title}
                     subtitle={subtitle}
                     registryUrl={registryUrl}
-                    eventName={eventName}
                     category={category}
                     registryItem={registryItem}
                     theme={theme}

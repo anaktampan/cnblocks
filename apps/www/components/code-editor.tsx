@@ -36,12 +36,12 @@ const CopyButton = ({ copied, onCopy }: CopyButtonProps) => {
     )
 }
 
-export const CodeEditor = ({ files, code, id, category, lang = 'tsx', maxHeight, className }: CodeEditorProps) => {
+export const CodeEditor = ({ files, code, lang = 'tsx', maxHeight, className }: CodeEditorProps) => {
     const [activeFileIndex, setActiveFileIndex] = useState(0)
 
     const currentCode = files && files[activeFileIndex]?.code ? files[activeFileIndex].code : (code as string) || ''
 
-    const { copied, copy } = useCopyToClipboard({ code: currentCode, title: id, category, eventName: 'block_copy' })
+    const { copied, copy } = useCopyToClipboard({ code: currentCode })
 
     return (
         <>

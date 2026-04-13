@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Geist_Mono, Asar } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
-import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from 'next/script'
 
 const geistMono = Geist_Mono({
     variable: '--font-geist-mono',
@@ -30,12 +30,20 @@ export default function RootLayout({
         <html
             lang="en"
             suppressHydrationWarning>
-            <body className={`${geistMono.variable} ${asar.variable} overflow-x-hidden antialiased`}>
+            <head>
+                <Script
+                    src="https://cdn.visitors.now/v.js"
+                    data-token="5722e021-09f2-41cb-81ef-fb61725617f2"
+                    strategy="beforeInteractive"
+                />
+
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `(function(){if(window.location.pathname==='/'){document.documentElement.setAttribute('data-home','')}})()`,
                     }}
                 />
+            </head>
+            <body className={`${geistMono.variable} ${asar.variable} overflow-x-hidden antialiased`}>
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
@@ -44,7 +52,6 @@ export default function RootLayout({
                     {children}
                 </ThemeProvider>
             </body>
-            <GoogleAnalytics gaId="G-6KY6TLKXKY" />
         </html>
     )
 }

@@ -1,9 +1,8 @@
 import { Button } from '@tailark/core/ui/button'
 import Link from 'next/link'
-import { sendGAEvent } from '@next/third-parties/google'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@tailark/core/ui/tooltip'
 
-export function OpenInV0Button({ registryUrl, title, category, className }: { registryUrl: string; title: string; category: string; className?: string }) {
+export function OpenInV0Button({ registryUrl, className }: { registryUrl: string; className?: string }) {
     return (
         <TooltipProvider>
             <Tooltip>
@@ -12,13 +11,7 @@ export function OpenInV0Button({ registryUrl, title, category, className }: { re
                         aria-label="Open in v0"
                         className={className || 'hover:bg-foreground/4 size-7 px-0'}
                         variant="ghost"
-                        asChild
-                        onClick={() =>
-                            sendGAEvent('event', 'open_in_v0', {
-                                block_title: title,
-                                block_category: category,
-                            })
-                        }>
+                        asChild>
                         <Link
                             href={`https://v0.dev/chat/api/open?url=${registryUrl}`}
                             target="_blank"

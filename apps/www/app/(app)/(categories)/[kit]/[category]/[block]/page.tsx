@@ -183,7 +183,6 @@ export default async function BlockDetailPage({ params }: PageProps) {
                                                     imageClassName={imageClasses}
                                                     category={category}
                                                     registryItem={registryItem}
-                                                    eventName="block_cli_copy"
                                                 />
                                             )
                                         })}

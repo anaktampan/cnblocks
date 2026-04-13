@@ -23,7 +23,6 @@ export const PageCard = ({ style, asDialog, category, variant, onClick, imageUrl
             asDialog={asDialog}
             registryUrl=""
             registryItem={`${style}-${category}-${variant}`}
-            eventName="page_cli_copy"
             category={category}
             theme="quartz"
             disableV0={true}

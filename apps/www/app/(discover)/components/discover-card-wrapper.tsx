@@ -14,7 +14,7 @@ interface DiscoverPageCardProps extends DiscoverCardToolbarProps {
     licence?: string
 }
 
-export const DiscoverPageCard = ({ category, registryItem, eventName, theme, href, title, subtitle, asDialog = false, onClick, children, isBlock, registryUrl, licence, disableV0, openInNewTab }: DiscoverPageCardProps) => {
+export const DiscoverPageCard = ({ category, registryItem, theme, href, title, subtitle, asDialog = false, onClick, children, isBlock, registryUrl, licence, disableV0, openInNewTab }: DiscoverPageCardProps) => {
     const [isToolbarVisible, setIsToolbarVisible] = useState(false)
 
     const handleMouseEnter = () => {
@@ -30,7 +30,7 @@ export const DiscoverPageCard = ({ category, registryItem, eventName, theme, hre
             className="group relative"
             onMouseEnter={!asDialog ? handleMouseEnter : undefined}
             onMouseLeave={!asDialog ? handleMouseLeave : undefined}>
-            {isToolbarVisible && !asDialog && <DiscoverCardToolbar {...{ href, title, subtitle, registryUrl, eventName, category, registryItem, theme, isBlock, disableV0, openInNewTab }} />}
+            {isToolbarVisible && !asDialog && <DiscoverCardToolbar {...{ href, title, subtitle, registryUrl, category, registryItem, theme, isBlock, disableV0, openInNewTab }} />}
 
             <CardContainer>
                 {children}
